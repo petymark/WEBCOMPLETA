@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WebStyle.css">
+    <title>Electronic SummFest</title>
+</head>
+<body class="fondoPrincipal">
+    <div id="contenedor">
+        <header>
+            <div class="menu">
+               <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="entradas.html">Entradas</a></li>
+                        <li><a href="ubicacion.html">Cómo llegar</a></li>
+                        <li class="submenu">
+                            <a href="#">Cartel</a>
+                            <ul class="submenu-content">
+                                <li><a href="index.html">Opción 1</a></li>
+                                <li><a href="entradas.html">Opción 2</a></li>
+                                <li><a href="ubicacion.html">Opción 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
+        <section class="hero">
+            <header>
+                <h2>Formulario de Solicitud de Tickets</h2>
+            <form action="" method="POST" class="formulario">
+                <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="apellidos">Apellidos:</label><br>
+                    <input type="text" id="apellidos" name="apellidos" required><br>
+
+                <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+
+                <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required><br>
+
+                <label for="fecha">Fecha de nacimiento:</label><br>
+                    <input type="date" id="fecha" name="fecha" required><br>
+
+                <label for="motivo">Lugar de envío de Tickets:</label><br>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Selecciona una localización</option>
+                    <option value="consulta">ESPAÑA(Península)</option>
+                    <option value="sugerencia">ESPAÑA (Canarias)</option>
+                    <option value="reclamo">Extranjero</option>
+                    <br>
+                </select><br>
+                <form name="formulario" method="post" action="https://dam.es">
+                    <label for="motivo">Selecciona el nº de Tickets:</label><br>
+                    <input type="number" name="numero" id="" value="1" min="0" max="10" step="1">
+                    </form>
+                    
+                    <form name="" method="post" action="" class="form2">Estilos preferidos
+                        <br><input type="checkbox" name="EDM" checked>EDM
+                        <br><input type="checkbox" name="Techno">Techno
+                        <br><input type="checkbox" name="House">House
+                        <br><input type="checkbox" name="HardTechno">HardTechno
+                    </form>
+                    <input type="submit" value="Enviar">
+                </form>
+                <br>
+                <br>
+                <article class="redesSociales">
+                    <img src="IMG/facebook-svgrepo-com(1).svg" alt="" class="FB">
+                        <img src="IMG/instagram-svgrepo-com.svg" alt="" class="IG">
+                        <img src="IMG/twitter-svgrepo-com.svg" alt="" class="TW">
+                        </article>
+                    <footer class="promotores">
+                        <h3>Promocionan:</h3>
+                        <img src="img/cocacola.png" class="" alt="">
+                        <img src="img/monster.png" class="" alt="">
+                        <img src="img/redbull.png" class="" alt="">
+                        <img src="img/MTV.png" class="" alt="">
+                        <p>&copy; 2024 Festival de Música Electrónica</p>
+                    </footer>
+                </article>
+            </header>
+        </section>
+    </div>
+</body>
+</html>
